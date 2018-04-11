@@ -87,11 +87,13 @@
           <ul id="menu-main-menu" class="nav navbar-nav">
 
             <li class="menu-item menu-item-has-children  dropdown">
-              <a href="#">Law <i class="fa fa-angle-down arrow-icon" aria-hidden="true"></i></a>
-              <ul role="menu" class=" dropdown-menu">
-                <li class=""><a href="index.html">Civil</a></li>
-                <li class=""><a href="about_us.html">Criminal</a></li>
-              </ul>
+              <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="reader-mode">
+                <label class="onoffswitch-label" for="reader-mode">
+                    <div class="onoffswitch-inner"></div>
+                    <div class="onoffswitch-switch"></div>
+                </label>
+            </div>
             </li>
 
 
@@ -119,12 +121,41 @@
       <div class="search-sidebar">
         <aside id="menu" class="slimScroll">
           <div id="navigation" >
-
-            <div class="menu-title">
-              <h4><i class="fa fa-info-circle" aria-hidden="true"></i> Add. Session Judge</h4>
-            </div>
-
             <div class="filter-collapse">
+
+              <div class="filter-panel">
+              	<div class="filter-heading">
+                  	<a data-toggle="collapse" href="#collaps3" aria-expanded="false" aria-controls="collaps1">
+                  		<h4>Trial Court</h4>
+                      </a>
+                  </div>
+                  <div class="filter-content collapse in" id="collaps3">
+                    <div class="links-tab">
+                      <ul>
+
+                        <li>
+                          <a href="#">Special Judge</a>
+                        </li>
+
+                        <li>
+                          <a href="#">Additional Sessions Judge Cum FTC</a>
+                        </li>
+
+                        <li>
+                          <a href="#">Special Judge (CBI) </a>
+                        </li>
+
+                        <li>
+                          <a href="#">Metropolitan Magistrate</a>
+                        </li>
+                        <li>
+                          <a href="#">Metropolitan Magistrate (Evening Court)</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+
 <div class="filter-panel">
 	<div class="filter-heading">
     	<a data-toggle="collapse" href="#collaps1" aria-expanded="false" aria-controls="collaps1">
@@ -157,48 +188,6 @@
     </div>
 </div>
 
-<div class="filter-panel">
-	<div class="filter-heading">
-    	<a data-toggle="collapse" href="#collaps3" aria-expanded="false" aria-controls="collaps1">
-    		<h4>Trial Court</h4>
-        </a>
-    </div>
-    <div class="filter-content collapse" id="collaps3">
-    	<ul class="filter-list">
-              <li>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-            </li>
-
-            </ul>
-    </div>
-</div>
-
-<div class="links-tab">
-  <h4>Selection</h4>
-  <ul>
-    <li>
-      <a href="#">Special Judge</a>
-    </li>
-
-    <li>
-      <a href="#">Additional Sessions Judge Cum FTC</a>
-    </li>
-
-    <li>
-      <a href="#">Special Judge (CBI) </a>
-    </li>
-
-    <li>
-      <a href="#">Metropolitan Magistrate</a>
-    </li>
-    <li>
-      <a href="#">Metropolitan Magistrate (Evening Court)</a>
-    </li>
-  </ul>
-</div>
-
-
-
 
 <div class="filter-action">
   <select class="form-control input-lg" name="">
@@ -214,8 +203,9 @@
 
 
 
-
-
+<div class="text-center j-preview">
+  <button class="btn btn-lg btn-primary btn-block">Preview Judgment</button>
+</div>
 
 
 
@@ -238,6 +228,9 @@
 
                         <div class="tab-action-links">
                           <ul class="top-bar-links">
+                            <li>
+                              <a href="#">Add. Session Judge</a>
+                            </li>
                             <li><a href="#">Miscellaneous</a> </li>
                             <li><a href="#">For bail</a> </li>
                             <li><a href="#">Arguments on charge</a> </li>
@@ -264,52 +257,42 @@
             <table class="table table-bordered table-striped dark-head">
               <thead>
                 <tr>
-                  <th rowspan="2">Date</th>
-                  <th rowspan="2">Type of update</th>
-                  <th rowspan="2" width="200">Case Update</th>
-                  <th rowspan="2">Mark for <br> Judgment</th>
-                  <th rowspan="2">Upload Order</th>
-                  <th width="200" colspan="2">Citation</th>
-                </tr>
-                <tr>
-                  <th>Search</th>
-                  <th>Para</th>
+                  <th width="200">Date</th>
+                  <th>Case Update</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
+                  <td>3/27/2018</td>
                   <td>
-                    <input type="date" name="" value="" class="form-control input-sm"  style="width:150px">
+                    <a href="#">Order 267/18</a>
                   </td>
-                  <td>
-                    <select class="form-control input-sm" name="" style="width:160px">
-                      <option>Select Item</option>
-                    </select>
-                  </td>
-                  <td>
-                    Order 267/18
-                  </td>
-                  <td>
-                    <div class="checkbox checkbox-primary">
-                      <label>
-                        <input class="styled" type="checkbox" checked="">
-                        <span> </span>
-                      </label>
-                    </div>
-                  </td>
-
-                  <td>
-                    <button class="btn btn-primary btn-sm">Upload</button>
-                  </td>
-                  <td class="table-sm-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                  </td>
-                  <td class="table-sm-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                  </td>
-
                 </tr>
 
+                <tr>
+                  <td>3/27/2018</td>
+                  <td><a href="#">Order 267/18</a></td>
+                </tr>
+
+                <tr>
+                  <td>3/27/2018</td>
+                  <td><a href="#">Order 267/18</a></td>
+                </tr>
+
+                <tr>
+                  <td>3/27/2018</td>
+                  <td><a href="#">Order 267/18</a></td>
+                </tr>
+
+                <tr>
+                  <td>3/27/2018</td>
+                  <td><a href="#">Order 267/18</a></td>
+                </tr>
+
+                <tr>
+                  <td>3/27/2018</td>
+                  <td><a href="#">Order 267/18</a></td>
+                </tr>
 
 
               </tbody>
@@ -331,6 +314,103 @@
     </div>
   </footer>
 
+
+  <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Enter proceeding information – Arguments</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="">Date</label>
+                <input type="Date" class="form-control" id="" placeholder="">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="">Text</label>
+                <textarea name="name" rows="2" cols="80" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="">Citation</label>
+                <input type="text" class="form-control" id="" placeholder="Enter Text">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for=""></label>
+                <input type="text" class="form-control" id="" placeholder="Search">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="">Para Number </label>
+                <input type="text" class="form-control" id="" placeholder="Enter Para Number">
+              </div>
+            </div>
+
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <div class="checkbox checkbox-primary">
+                  <label>
+                    <input class="styled" type="checkbox" >
+                    <span>Mark for judgment </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form-group">
+                <div class="checkbox checkbox-primary">
+                  <label>
+                    <input class="styled" type="checkbox" >
+                    <span>Mark for Order  </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="checkbox checkbox-primary">
+                  <label>
+                    <input class="styled" type="checkbox" >
+                    <span>Waiting for Similar matter on higher court   </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <link rel='stylesheet' id='vc_google_fonts_abril_fatfaceregular-css' href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.7' type='text/css' media='all' />
 
 
@@ -346,6 +426,13 @@
   <script type='text/javascript' src='wp-content/themes/js/mdb.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/jquery.slimscroll.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/bootstrap-select.min.js'></script>
+
+
+  <script type="text/javascript">
+      $(window).on('load',function(){
+          $('#myModal').modal('show');
+      });
+  </script>
 
   <script type="text/javascript">
     $(function() {
