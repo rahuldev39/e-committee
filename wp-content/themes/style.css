@@ -4568,7 +4568,8 @@ label small {
 }
 
 .search-result-listing {
-    padding: 30px
+    padding: 30px;
+    padding-top: 20px;
 }
 
 .num_results #order_by_message {
@@ -8745,9 +8746,9 @@ header.header-bluebg .search-bar .select-search + .search-field input.form-contr
 .search-nav-main .search-bar .search-filed-box {
     padding: 1px;
     background-color: #e8e8e8;
-    margin-top: 3px;
+    margin-top: 0px;
     max-width: 750px;
-    margin-left: 56px
+    margin-left: 56px;
 }
 
 .notes-popup {
@@ -10418,7 +10419,13 @@ border-radius: 15px;
     padding: 6px 45px;
     font-size: 13px;
 }
-
+.links-tab ul li.active a {
+    display: block;
+    padding: 6px 45px;
+    font-size: 13px;
+    color: #e4781f;
+    font-weight: 600;
+}
 .filter-action select {
     line-height: initial;
     -webkit-appearance: menulist-button;
@@ -10464,7 +10471,7 @@ border-radius: 15px;
 }
 .page-heading h4 {
     margin-top: 0px;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
     font-size: 23px;
     font-weight: 700;
     color: #33668c;
@@ -10503,6 +10510,51 @@ border-radius: 15px;
     font-size: 11px;
     line-height: inherit;
     color: #484848;
+}
+.top-controls {
+    margin-bottom: 15px;
+}
+.btn-orange {
+    background: #ff7400;
+    background: -moz-linear-gradient(top, #fb8b2b 0%, #dc7319 100%);
+    background: -webkit-linear-gradient(top, #fb8b2b 0%,#dc7319 100%);
+    background: linear-gradient(to bottom, #fb8b2b 0%,#dc7319 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', endColorstr='#ff7400',GradientType=0 );
+    color: white;
+    border: 1px solid #e4781f;
+}
+.btn-orange:hover{
+  color: white
+}
+.btn-orange:active,.btn-orange:focus{
+  color: white;
+  background-color: #fb8b2b
+}
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    font-weight: 600;
+    color: #ffffff;
+}
+.modal-header {
+    min-height: 16.42857143px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #35678e;
+    border-radius: 4px 3px 0px 0px;
+}
+.close {
+    float: right;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    filter: alpha(opacity=20);
+    opacity: .6;
+}
+.p-info-modal .modal-dialog{
+  min-width: 700px;
 }
 /*##################------New page css end-------#########################*/
 

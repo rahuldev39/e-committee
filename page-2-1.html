@@ -24,6 +24,7 @@
   <link rel='stylesheet' href='./wp-content/themes/build.css' type='text/css' media='all' />
   <link rel='stylesheet' id='redux-google-fonts-css' href='http://fonts.googleapis.com/css?family=PT+Sans%3A400%2C700%2C400italic%2C700italic%7CWork+Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;ver=1474625187' type='text/css' media='all'
   />
+  <link rel="stylesheet" href="./wp-content/themes/bootstrap-datepicker.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900" rel="stylesheet">
   <script type='text/javascript' src="wp-content/themes/js/jquery.js"></script>
   <script type='text/javascript' src='wp-content/plugins/tt-vc-addon/assets/js/jquery.easing.min.js'></script>
@@ -87,11 +88,13 @@
           <ul id="menu-main-menu" class="nav navbar-nav">
 
             <li class="menu-item menu-item-has-children  dropdown">
-              <a href="#">Law <i class="fa fa-angle-down arrow-icon" aria-hidden="true"></i></a>
-              <ul role="menu" class=" dropdown-menu">
-                <li class=""><a href="index.html">Civil</a></li>
-                <li class=""><a href="about_us.html">Criminal</a></li>
-              </ul>
+              <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="reader-mode">
+                <label class="onoffswitch-label" for="reader-mode">
+                    <div class="onoffswitch-inner"></div>
+                    <div class="onoffswitch-switch"></div>
+                </label>
+            </div>
             </li>
 
 
@@ -119,9 +122,6 @@
       <div class="search-sidebar">
         <aside id="menu" class="slimScroll">
           <div id="navigation" >
-
-
-
             <div class="filter-collapse">
 
               <div class="filter-panel">
@@ -134,7 +134,7 @@
                     <div class="links-tab">
                       <ul>
 
-                        <li>
+                        <li class="active">
                           <a href="./page-2-1.html">Special Judge</a>
                         </li>
 
@@ -206,18 +206,6 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
 
 
@@ -226,97 +214,118 @@
       </div>
       <div class="search-main ">
 
+        <div class="tab-action-box">
+          <div class="tab-action-links">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="control-bar">
+                    <a href="#" class="action-link sidebar-toggle">
+                        <i class="fa fa-indent" aria-hidden="true"></i> Filters
+                        </a>
+
+                        <div class="tab-action-links">
+                          <ul class="top-bar-links">
+                            <li><a href="#">Misc cases</a> </li>
+                            <li><a href="#">Misc/Appearance</a> </li>
+                            <li><a href="#">Argument On Charge</a> </li>
+                            <li><a href="#">Prosecution Evidence</a> </li>
+                            <li><a href="#">Arguments</a> </li>
+                            <li><a href="#">Final Arguments</a> </li>
+                            <li> <a href="#" class="v-all">View All</a> </li>
+                          </ul>
+                      </div>
+                </div>
+
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
 
 
         <div class="search-result-listing">
+
           <div class="page-heading">
-            <h4>List of cases</h4>
+            <h4>Add. Session Judge</h4>
+          </div>
+
+          <div class="top-controls">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="">
+                  <div class="input-group">
+
+                    <select class="form-control" name="">
+                      <option>Add Proceeding</option>
+                      <option>Miscellaneous</option>
+                      <option>For bail</option>
+                      <option>Arguments on charge</option>
+                      <option>Prosecution Evidence</option>
+                      <option>Defence Evidence</option>
+                      <option>Arguments</option>
+                    </select>
+
+                    <div class="input-group-btn">
+                      <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 pull-right">
+                <div class="">
+                    <button class="btn btn-orange btn-block">Generate AI Judgment</button>
+                </div>
+              </div>
+            </div>
+
+
+
           </div>
 
           <div class="table-responsive ">
             <table class="table table-bordered table-striped dark-head">
               <thead>
                 <tr>
-                  <th>S.No</th>
-                  <th>Cases</th>
-                  <th>Party Name</th>
-                  <th>Advocate Name</th>
+                  <th width="200">Date</th>
+                  <th>Case Update</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>1</td>
+                  <td>3/27/2018</td>
                   <td>
-                    <a href="./page-2.html">Writ Petition (C) Nos. 9683-9684 of 1983</a>
+                    orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </td>
-                  <td>
-                  Brahmosmj Education Society &amp; Another<br>
-                  <b>&nbsp; &nbsp; &nbsp; Vs</b><br>
-                  State of West Bengal &amp; Others
-                </td>
-                <td>MRS.R. BANUMATHI</td>
                 </tr>
 
                 <tr>
-                  <td>2</td>
-                  <td>
-                    <a href="./page-2.html">Writ Petition (C) Nos. 9683-9684 of 1983</a>
-                  </td>
-                  <td>
-                  Brahmosmj Education Society &amp; Another<br>
-                  <b>&nbsp; &nbsp; &nbsp; Vs</b><br>
-                  State of West Bengal &amp; Others
-                </td>
-                <td>MRS.R. BANUMATHI</td>
+                  <td>3/27/2018</td>
+                  <td><a href="#">Order 267/18</a></td>
                 </tr>
+
                 <tr>
-                  <td>3</td>
-                  <td>
-                    <a href="./page-2.html">Writ Petition (C) Nos. 9683-9684 of 1983</a>
-                  </td>
-                  <td>
-                  Brahmosmj Education Society &amp; Another<br>
-                  <b>&nbsp; &nbsp; &nbsp; Vs</b><br>
-                  State of West Bengal &amp; Others
-                </td>
-                <td>MRS.R. BANUMATHI</td>
+                  <td>3/27/2018</td>
+                  <td>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
                 </tr>
+
                 <tr>
-                  <td>4</td>
-                  <td>
-                    <a href="./page-2.html">Writ Petition (C) Nos. 9683-9684 of 1983</a>
-                  </td>
-                  <td>
-                  Brahmosmj Education Society &amp; Another<br>
-                  <b>&nbsp; &nbsp; &nbsp; Vs</b><br>
-                  State of West Bengal &amp; Others
-                </td>
-                <td>MRS.R. BANUMATHI</td>
+                  <td>3/27/2018</td>
+                  <td><a href="#">Order 267/18</a></td>
                 </tr>
+
                 <tr>
-                  <td>5</td>
-                  <td>
-                    <a href="./page-2.html">Writ Petition (C) Nos. 9683-9684 of 1983</a>
-                  </td>
-                  <td>
-                  Brahmosmj Education Society &amp; Another<br>
-                  <b>&nbsp; &nbsp; &nbsp; Vs</b><br>
-                  State of West Bengal &amp; Others
-                </td>
-                <td>MRS.R. BANUMATHI</td>
+                  <td>3/27/2018</td>
+                  <td>commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</td>
                 </tr>
+
                 <tr>
-                  <td>6</td>
-                  <td>
-                    <a href="./page-2.html">Writ Petition (C) Nos. 9683-9684 of 1983</a>
-                  </td>
-                  <td>
-                  Brahmosmj Education Society &amp; Another<br>
-                  <b>&nbsp; &nbsp; &nbsp; Vs</b><br>
-                  State of West Bengal &amp; Others
-                </td>
-                <td>MRS.R. BANUMATHI</td>
+                  <td>3/27/2018</td>
+                  <td>velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
                 </tr>
+
 
               </tbody>
             </table>
@@ -337,6 +346,102 @@
     </div>
   </footer>
 
+
+  <!-- Modal -->
+<div class="modal fade p-info-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Enter proceeding information – Arguments</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="">Date</label>
+                <input type="text" class="form-control" id="date-picker" placeholder="">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="">Text</label>
+                <textarea name="name" rows="4" cols="80" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="">Citation</label>
+                <input type="text" class="form-control" id="" placeholder="Enter Text">
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="form-group">
+                <label for=""></label>
+                <input type="text" class="form-control" id="" placeholder="Search">
+                <small class="text-muted">powered by legitquest</small>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Para Number </label>
+                <input type="text" class="form-control" id="" placeholder="">
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="checkbox checkbox-primary">
+                  <label>
+                    <input class="styled" type="checkbox" >
+                    <span>Mark for judgment </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="checkbox checkbox-primary">
+                  <label>
+                    <input class="styled" type="checkbox" >
+                    <span>Mark for Order  </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="checkbox checkbox-primary">
+                  <label>
+                    <input class="styled" type="checkbox" >
+                    <span>Waiting for Similar matter on higher court   </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <link rel='stylesheet' id='vc_google_fonts_abril_fatfaceregular-css' href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.7' type='text/css' media='all' />
 
 
@@ -352,7 +457,15 @@
   <script type='text/javascript' src='wp-content/themes/js/mdb.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/jquery.slimscroll.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/bootstrap-select.min.js'></script>
+  <script type="text/javascript" src="wp-content/themes/js/bootstrap-datepicker.min.js"> </script>
 
+<script type="text/javascript">
+  $('#date-picker').datepicker({
+    todayBtn: "linked",
+    clearBtn: true,
+    todayHighlight: true
+  });
+</script>
   <script type="text/javascript">
     $(function() {
       $('.popup-open').on('click', function(e) {
