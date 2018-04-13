@@ -1,16 +1,16 @@
 .listslider-container {
     overflow: hidden;
-    margin-right: 18px;
-    margin-left: 18px;
-    flex: 1;
+
+}
+.slider-box{
+  padding: 0px 18px
 }
 .listslider-arrow {
-
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s linear, visibility 0.5s linear, left 0.1s linear, right 0.1s linear, text-shadow 0.1s linear;
-    top: -1px;
+    top: 16px;
     font-size: 15px;
     min-width: 14px;
     -webkit-touch-callout: none;
@@ -19,6 +19,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    position: absolute;
 }
 
 .listslider-arrow.active{
@@ -28,7 +29,7 @@
 
 
 .listslider-arrow.listslider-right {
-    right: 19px;
+    right: 2px;
     text-align: right;
 }
 
@@ -62,15 +63,12 @@ ul.listslider {
     white-space: nowrap;
     clear: both;
     padding-left: 0;
-    display: flex;
-    justify-content: space-between;
+
 }
 
 ul.listslider li {
     list-style: none;
-    float: left;
-    padding-right: 25px;
+    padding-right: 12px;
     display: inline-flex;
     align-items: center;
-  
 }
