@@ -138,12 +138,10 @@ div.tree-multiselect .auxiliary input.search {
     display: table-cell;
     width: 100%;
     position: absolute;
-    top: -29px;
+    top: -36px;
     height: 31px;
     outline: none;
     left: 0px;
-    border: 1px solid #c1d3e0;
-    padding: 7px 8px;
 }
 div.tree-multiselect .auxiliary .select-all-container {
 display: table-cell;

@@ -4331,14 +4331,14 @@ label small {
     opacity: 0;
     transition: all ease-in-out 100ms;
     display: none;
-    top: 75px;
+    top: 40px;
 }
 
 .open-dropdown .court-dropdown-box {
     min-height: 40px;
     opacity: 1;
-    box-shadow: 0 0 9px #547590;
-    display: block
+    box-shadow: 0px 4px 3px #4848487a;
+    display: block;
 }
 
 .search-header {
@@ -10591,6 +10591,13 @@ border-radius: 15px;
     font-size: 13px;
     color: white;
 }
+.piechart-box{
+max-width: 300px !important;
+margin: 0 auto;
+}
+
+
+
 /*##################------New page css end-------#########################*/
 
 
