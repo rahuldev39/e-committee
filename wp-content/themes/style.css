@@ -4330,7 +4330,8 @@ label small {
     right: 15px;
     opacity: 0;
     transition: all ease-in-out 100ms;
-    display: none
+    display: none;
+    top: 75px;
 }
 
 .open-dropdown .court-dropdown-box {
@@ -8730,8 +8731,8 @@ header.header-bluebg .search-bar .select-search + .search-field input.form-contr
 
 .search-nav-main .search-field .form-control {
     border-radius: 22px;
-    height: 34px;
-    padding: 5px 18px
+    height: 40px;
+    padding: 5px 18px;
 }
 
 .search-nav-main .search-btn {
@@ -10561,6 +10562,34 @@ border-radius: 15px;
 }
 .p-info-modal .modal-dialog{
   min-width: 700px;
+}
+.case-haeding h4 {
+    margin-top: 27px;
+    margin-bottom: 17px;
+    font-size: 23px;
+    color: #386b92;
+}
+.btn-lightblue{
+  background: #cfe7fa;
+    background: -moz-linear-gradient(top, #cfe7fa 0%, #6393c1 100%);
+    background: -webkit-linear-gradient(top, #cfe7fa 0%,#6393c1 100%);
+    background: linear-gradient(to bottom, #e2edf7 0%,#b5d0e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=0 );
+    border: 1px solid #99b2cc;
+    color: #1b3d56;
+}
+.chartbox {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 30px
+}
+.chart-box-heading {
+    margin-bottom: 0px;
+    background-color: #34678e;
+    padding: 12px 15px;
+    font-size: 13px;
+    color: white;
 }
 /*##################------New page css end-------#########################*/
 
